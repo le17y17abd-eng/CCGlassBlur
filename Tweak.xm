@@ -10,7 +10,8 @@ static NSInteger const kCCGlassBlurViewTag = 0xCCB10;
 - (void)viewDidLayoutSubviews {
     %orig;
 
-    UIView *rootView = self.view;
+    UIViewController *overlayController = (UIViewController *)self;
+    UIView *rootView = overlayController.view;
     if (!rootView) return;
 
     UIView *existing = [rootView viewWithTag:kCCGlassBlurViewTag];
