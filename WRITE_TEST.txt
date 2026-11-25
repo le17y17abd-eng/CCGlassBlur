@@ -1,2 +1,0 @@
-CCGlassBlur write-permission test.
-Created by ChatGPT GitHub connector.
